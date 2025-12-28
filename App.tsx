@@ -6,7 +6,6 @@ import ProtocolCard from './components/ProtocolCard';
 import CategoryCard from './components/CategoryCard';
 import DownloadFooter from './components/DownloadFooter';
 import GeneralSettingsView from './components/GeneralSettingsView';
-import { Protocol } from './types';
 
 // Map Categories to vibrant Tailwind Gradients
 const CATEGORY_STYLES: Record<string, string> = {

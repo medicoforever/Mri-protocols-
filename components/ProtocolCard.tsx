@@ -10,9 +10,6 @@ const ProtocolCard: React.FC<ProtocolCardProps> = ({ protocol }) => {
   const [isOpen, setIsOpen] = useState(false);
   const totalTime = calculateTotalTime(protocol.sequences);
 
-  // Extract category for potential color coding, fallback to gray
-  const category = protocol.additional_info ? protocol.additional_info.split('>')[0].trim() : 'Other';
-
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow duration-200 flex flex-col">
       <div 
