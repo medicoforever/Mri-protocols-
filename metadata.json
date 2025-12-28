@@ -1,0 +1,5 @@
+{
+  "name": "MRI Protocol Viewer",
+  "description": "A comprehensive, searchable dashboard for MRI machine protocols, organizing sequences, durations, and clinical categories in a human-readable format.",
+  "requestFramePermissions": []
+}
