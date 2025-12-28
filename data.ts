@@ -1,187 +1,191 @@
 import { Protocol } from './types';
 
 export const generalSettings = {
-  "Protocol_Structure": {
+  "Protocol_Parameters": {
     "Routine": {
-      "Common": {
-        "Slice_Group": null,
-        "Slices": null,
-        "Distance_Factor": null,
-        "Position": "",
-        "Orientation": "",
-        "Phase_Encoding_Dir": "",
-        "Phase_Oversampling": null,
-        "FoV_Read": null,
-        "FoV_Phase": null,
-        "Slice_Thickness": null,
-        "TR": null,
-        "TE": null,
-        "Averages": null,
-        "Concatenations": null,
-        "AutoAlign": ""
+      "Routine_Common": {
+        "Slice_Group": " [e.g. 1] ",
+        "Slices": " [e.g. 40] ",
+        "Distance_Factor": " [e.g. 20 %] ",
+        "Position": " [e.g. L1.3 P18.8 H43.3] ",
+        "Orientation": " [e.g. T > C14.2 > S-3.0] ",
+        "Phase_Encoding_Dir": " [e.g. R >> L] ",
+        "Phase_Oversampling": " [e.g. 50 %] ",
+        "FoV_Read": " [e.g. 200 mm] ",
+        "FoV_Phase": " [e.g. 87.5 %] ",
+        "Slice_Thickness": " [e.g. 3.0 mm] ",
+        "TR": " [e.g. 9000.0 ms] ",
+        "TE": " [e.g. 120.00 ms] ",
+        "Averages": " [e.g. 1] ",
+        "Concatenations": " [e.g. 3] ",
+        "AutoAlign": " [e.g. Head > Brain] "
       },
       "Dynamic": {
-        "Dynamic_Mode": "",
-        "Measurements": null,
-        "Multiple_Series": ""
+        "Dynamic_Mode": " [e.g. Standard] ",
+        "Measurements": " [e.g. 1] ",
+        "Multiple_Series": " [e.g. Each Measurement] "
+      }
+    },
+    "Contrast": {
+      "Note": "See Resolution tab for overlapping parameters often grouped here depending on sequence type. In screenshots provided, 'Contrast' sidebar leads to common resolution settings.",
+      "Common": {
+        "FoV_Read": " [e.g. 200 mm] ",
+        "FoV_Phase": " [e.g. 87.5 %] ",
+        "Slice_Thickness": " [e.g. 3.0 mm] ",
+        "Base_Resolution": " [e.g. 320] ",
+        "Phase_Resolution": " [e.g. 70 %] ",
+        "Trajectory": " [e.g. Cartesian] ",
+        "Interpolation": " [Checkbox: Checked / Unchecked] "
       }
     },
     "Resolution": {
       "Common": {
-        "FoV_Read": null,
-        "FoV_Phase": null,
-        "Slice_Thickness": null,
-        "Base_Resolution": null,
-        "Phase_Resolution": null,
-        "Trajectory": "",
-        "Interpolation": null
-      },
-      "Acceleration": {},
-      "Filter": {}
+        "FoV_Read": " [e.g. 200 mm] ",
+        "FoV_Phase": " [e.g. 87.5 %] ",
+        "Slice_Thickness": " [e.g. 3.0 mm] ",
+        "Base_Resolution": " [e.g. 320] ",
+        "Phase_Resolution": " [e.g. 70 %] ",
+        "Trajectory": " [e.g. Cartesian] ",
+        "Interpolation": " [Checkbox: Checked / Unchecked] "
+      }
     },
     "Geometry": {
       "Common": {
-        "Slice_Group": null,
-        "Slices": null,
-        "Distance_Factor": null,
-        "Position": "",
-        "Orientation": "",
-        "Phase_Encoding_Dir": "",
-        "Phase_Oversampling": null,
-        "FoV_Read": null,
-        "FoV_Phase": null,
-        "Slice_Thickness": null,
-        "TR": null,
-        "Multi_Slice_Mode": "",
-        "Series": "",
-        "Concatenations": null
+        "Slice_Group": " [e.g. 1] ",
+        "Slices": " [e.g. 40] ",
+        "Distance_Factor": " [e.g. 20 %] ",
+        "Position": " [e.g. L1.3 P18.8 H43.3] ",
+        "Orientation": " [e.g. T > C14.2 > S-3.0] ",
+        "Phase_Encoding_Dir": " [e.g. R >> L] ",
+        "Phase_Oversampling": " [e.g. 50 %] ",
+        "FoV_Read": " [e.g. 200 mm] ",
+        "FoV_Phase": " [e.g. 87.5 %] ",
+        "Slice_Thickness": " [e.g. 3.0 mm] ",
+        "TR": " [e.g. 9000.0 ms] ",
+        "Multi_Slice_Mode": " [e.g. Interleaved] ",
+        "Series": " [e.g. Interleaved] ",
+        "Concatenations": " [e.g. 3] "
       },
       "AutoAlign": {
-        "Slice_Group": null,
-        "Position": "",
-        "Orientation": "",
-        "Phase_Encoding_Dir": "",
-        "AutoAlign": "",
-        "Initial_Position": "",
-        "R": null,
-        "A": null,
-        "F": null,
-        "Initial_Orientation": "",
-        "Initial_Rotation": null
+        "Initial_Position": " [e.g. R0.6 A15.2 F11.3] ",
+        "R": " [e.g. 0.6 mm] ",
+        "A": " [e.g. 15.2 mm] ",
+        "F": " [e.g. 11.3 mm] ",
+        "Initial_Orientation": " [e.g. Transversal] ",
+        "Initial_Rotation": " [e.g. 90.00 deg] "
       },
       "Navigator": {
-        "Navigator": ""
+        "Navigator_Setting": " [e.g. None / On / Off] "
       },
       "Saturation": {
-        "Saturation_Region": "",
-        "Special_Saturation": "",
-        "Gap": null,
-        "Thickness": null
+        "Saturation_Region": " [Select Region] ",
+        "Special_Saturation": " [e.g. Parallel F] ",
+        "Gap": " [e.g. 10.00 mm] ",
+        "Thickness": " [e.g. 50.00 mm] "
       },
       "Tim_Planning_Suite": {
-        "Set_n_Go_Protocol": null,
-        "Table_Position": "",
-        "Inline_Composing": null
+        "Set_n_Go_Protocol": " [Checkbox: Checked / Unchecked] ",
+        "Table_Position": " [e.g. H - 0 mm] ",
+        "Inline_Composing": " [Checkbox: Checked / Unchecked] "
       }
     },
     "System": {
       "Miscellaneous": {
-        "Coil_Selection": "",
-        "Store_Coil_Selection": null,
-        "MSMA": "",
-        "Sagittal": "",
-        "Coronal": "",
-        "Transversal": "",
-        "Coil_Combination": "",
-        "Matrix_Optimization": "",
-        "Coil_Focus": ""
+        "Coil_Selection": " [e.g. Auto Coil Select] ",
+        "Store_Coil_Selection": " [Checkbox: Checked / Unchecked] ",
+        "MSMA": " [e.g. S - C - T] ",
+        "Sagittal": " [e.g. R >> L] ",
+        "Coronal": " [e.g. A >> P] ",
+        "Transversal": " [e.g. F >> H] ",
+        "Coil_Combination": " [e.g. Adaptive Combine] ",
+        "Matrix_Optimization": " [e.g. Off] ",
+        "Coil_Focus": " [e.g. Flat] "
       },
       "Adjustments": {
-        "Adjustment_Strategy": "",
-        "B0_Shim": "",
-        "B1_Shim": "",
-        "CoilShim": "",
-        "Adjustment_Tolerance": "",
-        "Adjust_with_Body_Coil": null,
-        "Confirm_Frequency": "",
-        "Assume_Silicone": null
+        "Adjustment_Strategy": " [e.g. Standard] ",
+        "B0_Shim": " [e.g. Standard] ",
+        "B1_Shim": " [e.g. TrueForm] ",
+        "CoilShim": " [e.g. Off] ",
+        "Adjustment_Tolerance": " [e.g. Auto] ",
+        "Adjust_with_Body_Coil": " [Checkbox: Checked / Unchecked] ",
+        "Confirm_Frequency": " [e.g. Never] ",
+        "Assume_Silicone": " [Checkbox: Checked / Unchecked] "
       },
       "Adjust_Volume": {
-        "Position": "",
-        "Orientation": "",
-        "Rotation": null,
-        "R_Dimension": null,
-        "A_Dimension": null,
-        "F_Dimension": null,
-        "Reset": null
+        "Position": " [e.g. L1.3 P18.8 H43.3] ",
+        "Orientation": " [e.g. T > C14.2 > S-3.0] ",
+        "Rotation": " [e.g. 89.73 deg] ",
+        "R_to_L": " [e.g. 175 mm] ",
+        "A_to_P": " [e.g. 200 mm] ",
+        "F_to_H": " [e.g. 144 mm] ",
+        "Reset": " [Button] "
       },
       "Tx_Rx": {
-        "Frequency_1H": null,
-        "Tx_Ref_Nucleus": "",
-        "Ref_Amplitude_1H": null,
-        "Image_Scaling": null,
-        "Reset": null
+        "Frequency_1H": " [e.g. 123.257041 MHz] ",
+        "Tx_Ref_Nucleus": " [e.g. Amplitude [V]] ",
+        "Ref_Amplitude_1H": " [e.g. 0.000] ",
+        "Image_Scaling": " [e.g. 1.000] "
       }
     },
     "Physio": {
       "Signal": {
-        "1st_Signal_Mode": "",
-        "TR": null,
-        "Concatenations": null
+        "1st_Signal_Mode": " [e.g. None] ",
+        "Concatenations": " [e.g. 3] ",
+        "TR": " [e.g. 9000.0 ms] "
       },
-      "Cardiac": {},
-      "PACE": {}
+      "Cardiac": " [Options not shown in screenshots] ",
+      "PACE": " [Options not shown in screenshots] "
     },
     "Inline": {
       "Subtraction": {
-        "Subtract": null,
-        "Measurements": null,
-        "Motion_Correction": "",
-        "StdDev": null,
-        "Save_Original_Images": null
+        "Subtract": " [Checkbox: Checked / Unchecked] ",
+        "Measurements": " [e.g. 1] ",
+        "StdDev": " [Checkbox: Checked / Unchecked] ",
+        "Motion_Correction": " [e.g. None] ",
+        "Save_Original_Images": " [Checkbox: Checked / Unchecked] "
       },
       "MIP": {
-        "MIP_Sag": null,
-        "MIP_Cor": null,
-        "MIP_Tra": null,
-        "MIP_Time": null,
-        "Radial_MIP": null,
-        "Save_Original_Images": null,
-        "MPR_Sag": null,
-        "MPR_Cor": null,
-        "MPR_Tra": null
+        "MIP_Sag": " [Checkbox: Checked / Unchecked] ",
+        "MIP_Cor": " [Checkbox: Checked / Unchecked] ",
+        "MIP_Tra": " [Checkbox: Checked / Unchecked] ",
+        "MIP_Time": " [Checkbox: Checked / Unchecked] ",
+        "Radial_MIP": " [Checkbox: Checked / Unchecked] ",
+        "Save_Original_Images": " [Checkbox: Checked / Unchecked] ",
+        "MPR_Sag": " [Checkbox: Checked / Unchecked] ",
+        "MPR_Cor": " [Checkbox: Checked / Unchecked] ",
+        "MPR_Tra": " [Checkbox: Checked / Unchecked] "
       },
       "Composing": {
-        "Inline_Composing": null
+        "Inline_Composing": " [Checkbox: Checked / Unchecked] "
       }
     },
     "Sequence": {
       "Part_1": {
-        "Sequence_Name": "",
-        "Dimension": "",
-        "RF_Pulse_Type": "",
-        "Gradient_Mode": "",
-        "Flow_Compensation": "",
-        "Bandwidth": null,
-        "Echo_Spacing": null,
-        "Define": "",
-        "Turbo_Factor": null,
-        "Echo_Trains_per_Slice": null
+        "Sequence_Name": " [e.g. qtir_rs] ",
+        "Dimension": " [e.g. 2D] ",
+        "RF_Pulse_Type": " [e.g. Normal] ",
+        "Gradient_Mode": " [e.g. Fast] ",
+        "Flow_Compensation": " [e.g. Slice] ",
+        "Bandwidth": " [e.g. 289 Hz/Px] ",
+        "Echo_Spacing": " [e.g. 12.0 ms] ",
+        "Define": " [e.g. Turbo Factor] ",
+        "Turbo_Factor": " [e.g. 23] ",
+        "Echo_Trains_per_Slice": " [e.g. 4] "
       },
       "Part_2": {
-        "Introduction": null,
-        "Phase_Correction": "",
-        "Compensate_T2_Decay": null,
-        "Hyperecho": null,
-        "WARP": null,
-        "Red_EC_Sensitivity": null,
-        "Acoustic_Noise_Reduction": "",
-        "Reduce_Motion_Sens": null,
-        "Motion_Correction": ""
+        "Introduction": " [Checkbox: Checked / Unchecked] ",
+        "Phase_Correction": " [e.g. Automatic] ",
+        "Compensate_T2_Decay": " [Checkbox: Checked / Unchecked] ",
+        "Hyperecho": " [Checkbox: Checked / Unchecked] ",
+        "WARP": " [Checkbox: Checked / Unchecked] ",
+        "Red_EC_Sensitivity": " [Checkbox: Checked / Unchecked] ",
+        "Acoustic_noise_reduction": " [e.g. On / Off] ",
+        "Reduce_Motion_Sens": " [Checkbox: Checked / Unchecked] ",
+        "Motion_Correction": " [e.g. None] "
       },
       "Assistant": {
-        "SAR_Assistant": "",
-        "Allowed_Delay": null
+        "SAR_Assistant": " [e.g. Off] ",
+        "Allowed_Delay": " [e.g. 60 s] "
       }
     }
   }

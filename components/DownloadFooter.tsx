@@ -52,8 +52,8 @@ const DownloadFooter: React.FC<DownloadFooterProps> = ({ data }) => {
 
     // Add General Settings Section
     md += '# General Sequence Settings\n\n';
-    // Deep traverse: Protocol_Structure -> Routine -> Common -> key:value
-    const root = generalSettings.Protocol_Structure;
+    // Deep traverse: Protocol_Parameters -> Routine -> Common -> key:value
+    const root = generalSettings.Protocol_Parameters;
     
     Object.entries(root).forEach(([category, subSections]) => {
         md += `## ${category.replace(/_/g, ' ')}\n\n`;
@@ -152,7 +152,7 @@ const DownloadFooter: React.FC<DownloadFooterProps> = ({ data }) => {
 
     // 2. General Settings Section
     html += `<div class="section-header" style="page-break-before: always;">General Settings</div>`;
-    const root = generalSettings.Protocol_Structure;
+    const root = generalSettings.Protocol_Parameters;
 
     Object.entries(root).forEach(([category, subSections]) => {
         html += `<div class="header" style="color: #4338ca; font-size: 14pt; margin-top: 20px;">${category.replace(/_/g, ' ')}</div>`;

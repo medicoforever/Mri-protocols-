@@ -3,8 +3,8 @@ import { generalSettings } from '../data';
 
 const GeneralSettingsView: React.FC = () => {
   // Access the root structure directly. 
-  // Assuming the structure is always { "Protocol_Structure": { ... } } based on provided JSON.
-  const rootData = generalSettings.Protocol_Structure;
+  // Adjusted to match new data structure: Protocol_Parameters
+  const rootData = generalSettings.Protocol_Parameters;
   const categories = Object.keys(rootData);
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
