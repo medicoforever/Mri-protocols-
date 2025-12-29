@@ -759,7 +759,7 @@ export const rawData: Protocol[] = [
     "additional_info": "Head > Brain"
   },
   {
-    "protocol_name": "KMCH STROKE",
+    "protocol_name": "STROKE",
     "sequences": [
       { "name": "AAhead_scout", "duration": "00:14", "info": "AutoAlign Scout" },
       { "name": "Table Positioning Strategy", "duration": null, "info": "Table Positioning Strategy" },
